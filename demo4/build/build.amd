@@ -1,0 +1,2 @@
+node r.js -o build.js
+uglifyjs todo.js -m -c -o todo.min.js

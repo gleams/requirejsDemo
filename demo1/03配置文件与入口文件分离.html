@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="demo1"></div>
+<script src="../bower_components/requirejs/require.js" data-main="config"></script>
+<script>
+    //这部分代码可能为独立的.js文件
+    //config为配置文件
+    require(['config'],function () {
+        require(['jquery'],function ($) {
+            var $div1 = $('#demo1');
+            $div1.html('hello world!');
+        })
+    });
+</script>
+</body>
+</html>

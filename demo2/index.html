@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDO</title>
+</head>
+<style>
+    * {
+        margin:0;
+        padding:0;
+        font-size: 12px;
+    }
+    input{
+        padding:2px;
+    }
+    .container{
+        width: 960px;
+        margin: 50px auto 0;
+    }
+    .table{
+        width: 100%;
+
+    }
+    .table thead th{
+        background: #ccc;
+        padding:3px;
+    }
+    .table tbody td{
+        padding:2px;
+    }
+    .table tbody tr:nth-child(odd){
+        background: #eee;
+    }
+</style>
+<body>
+<div class="container">
+    <input type="text" class="jsInput" /> <input type="button" value="添加事务" class="jsAdd"/>
+    <table class="table jsList">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>事务</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+<script data-main="main.js" src="../bower_components/requirejs/require.js"></script>
+</body>
+</html>
